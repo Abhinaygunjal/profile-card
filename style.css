@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: hsl(234, 12%, 34%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container{
+    margin:90px 30px;
+}
+
+/* HEADER */
+header{
+    text-align: center;
+}
+header h1{
+    font-weight: 200;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+header h2 {
+    font-weight: 600;
+    font-size: 1.6em;
+    margin: 0;
+}
+header p {
+    font-size: 1.05em;
+    color: hsl(229, 6%, 66%);;
+    margin-bottom: 70px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.cardsmain {
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+.cards {
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 3px 10px 10px hsl(229, 6%, 66%);
+    margin-bottom: 30px;
+    width: 400px;
+    height: 222px;
+    overflow: hidden;
+}
+
+.card1 .line {
+    background-color: hsl(180, 62%, 55%);
+    height: 4px;
+}
+.card2 .line {
+    background-color: hsl(0, 78%, 62%);
+    height: 4px;
+}
+.card3 .line {
+    background-color: hsl(34, 97%, 64%);
+    height: 4px;
+}
+.card4 .line {
+    background-color: hsl(212, 86%, 64%);
+    height: 4px;
+}
+
+.cards h3{
+padding: 30px;
+margin: 0;
+}
+
+.cards p{
+    color: hsl(229, 6%, 66%);
+    font-size: 0.89em;
+    margin:-10px 0px 0px 30px;
+}
+
+.image {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        max-width: 525px;
+        margin: 0 auto;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 2.5em;
+    }
+}
+/* 780px */
+@media only screen and (min-width: 780px) {
+    .cardsmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        max-width: 900px;
+    }
+    .twocards {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}
+/* 1175px */
+@media only screen and (min-width: 1175px) {
+    .cardsmain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+    .cards {
+        width: 355px;
+        height: 255px;
+    }
+}
